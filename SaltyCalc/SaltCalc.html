@@ -1,0 +1,159 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title> SaltyCalculator </title>
+	<link href="salticon.jpeg" rel="shorcut icon">
+	<link rel="stylesheet" type="text/css" href="XButton.css">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<meta name="generator" content="LibreOffice 5.1.6.2 (Linux)"/>
+	<meta name="created" content="2019-03-05T12:15:17.792153323"/>
+	<meta name="changed" content="2019-03-05T12:25:14.277502458"/>
+	
+	<script type="text/javascript" src="jspdf.min.js"></script>
+	<script type="text/javascript" src="FuncCalc.js"></script>
+	<script type="text/javascript" src="NaClPDF.js"></script>
+	<style type="text/css">
+		body,div,table,thead,tbody,tfoot,tr,th,td,p { font-family:"Liberation Sans"; font-size:x-small }
+		a.comment-indicator:hover + comment { background:#ffd; position:absolute; display:block; border:1px solid black; padding:0.5em;  } 
+		a.comment-indicator { background:red; display:inline-block; border:1px solid black; width:0.5em; height:0.5em;  } 
+		comment { display:none;  } 
+		body {
+			background-image: url(Salty.jpg);
+			background-size: cover;
+		}
+	</style>
+	
+</head>
+
+<body onload="inicio()">
+<table cellspacing="0" border="0">
+	<form name="Intro">
+	<colgroup span="11" width="120"></colgroup>
+	<tr style="background-image: url(smashsalt.gif); background-size: 107px 52px;">
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"  colspan=11 rowspan=2 height="50" align="center" valign="middle">
+			<font size=5 color="#e59b38">Salty Calculator</font></td>
+		</tr>
+	<tr>
+		</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=6 height="25" align="center" valign=middle bgcolor="#999966">
+			<input type="text" name="Resultado" size="50" value="0"><br></td>
+		<td style="border-bottom: 1px solid #000000" align="left"><br></td>
+		<td style="border-bottom: 1px solid #000000" align="left"><br></td>
+		<td style="border-bottom: 1px solid #000000" align="left"><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000" colspan=2 align="center" valign="middle" bgcolor="#CCCC99"><br><input type="text" name="Fecha" size="38"  disabled></td>
+		</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000" colspan=9 height="25" align="center" valign=middle><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000" align="left"><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="25" align="center" valign=middle sdval="7" sdnum="3082;"><input type="button" class="buttonX21" value="7" onclick="insertarn(7)"></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="8" sdnum="3082;"><input type="button" class="buttonX21" value="8" onclick="insertarn(8)"></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="9" sdnum="3082;"><input type="button" class="buttonX21" value="9" onclick="insertarn(9)"></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=2 rowspan=9 align="center" valign=middle><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><input type="button" class="buttonX4M" value="Mem1" onclick="Mem1()"></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=3 align="center" valign=middle bgcolor="#089c5d"><input type="text" name="Memorial1"><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><input type="button" class="buttonX4M" value="M1" onclick="Rec1()"></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><input type="button" class="buttonX4M" value="Delete" onclick="Del1()"></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="25" align="center" valign=middle sdval="4" sdnum="3082;"><input type="button" class="buttonX21" value="4" onclick="insertarn(4)"></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="5" sdnum="3082;"><input type="button" class="buttonX21" value="5" onclick="insertarn(5)"></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="6" sdnum="3082;"><input type="button" class="buttonX21" value="6" onclick="insertarn(6)"></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><input type="button" class="buttonX4M" value="Mem2" onclick="Mem2()"></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=3 align="center" valign=middle bgcolor="#089c5d"><input type="text" name="Memorial2"><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><input type="button" class="buttonX4M" value="M2" onclick="Rec2()"></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><input type="button" class="buttonX4M" value="Delete" onclick="Del2()"></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="25" align="center" valign=middle sdval="1" sdnum="3082;">
+			<input type="button" class="buttonX21" value="1" onclick="insertarn(1)"></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="2" sdnum="3082;"><input type="button" class="buttonX21" value="2" onclick="insertarn(2)"></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="3" sdnum="3082;"><input type="button" class="buttonX21" value="3" onclick="insertarn(3)"></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><input type="button" class="buttonX4M" value="Mem3" onclick="Mem3()"></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=3 align="center" valign=middle bgcolor="#089c5d"><input type="text" name="Memorial3"><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><input type="button" class="buttonX4M" value="M3" onclick="Rec3()"></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><input type="button" class="buttonX4M" value="Delete" onclick="Del3()"></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="25" align="center" valign=middle><input type="button" class="buttonX22" value="-" onclick=insertars("-")></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="0" sdnum="3082;"><input type="button" class="buttonX21" value="0" onclick="insertarn(0)"></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><input type="button" class="buttonX22" value="+" onclick=insertars("+")></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><input type="button" class="buttonX4M" value="Mem4" onclick="Mem4()"></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=3 align="center" valign=middle bgcolor="#089c5d"><input type="text" name="Memorial4"><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><input type="button" class="buttonX4M" value="M4" onclick="Rec4()"></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><input type="button" class="buttonX4M" value="Delete" onclick="Del4()"></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="25" align="center" valign=middle><br><input type="button" class="buttonX3F" value="Factorial" onclick="factorial()"></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><br><input type="button" class="buttonX3" value="." onclick=insertarp(".")></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><input type="button" class="buttonX3" value="pi" onclick=insertarn(3.14159265359)><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><input type="button" class="buttonX6" value="º -> rad" onclick="angtorad()"><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=3 align="center" valign=middle><input type="button" class="buttonX6" value="seno" onclick="sen()"><input type="button" class="buttonX6" value="coseno" onclick="cos()"><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="middle"><input type="button" class="buttonX62" value="arcsen" onclick="arcsen()">
+<input type="button" class="buttonX62" value="arccos" onclick="arccos()"><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="middle"><input type="button" class="buttonX62" value="tan" onclick="tan()"><input type="button" class="buttonX62" value="arctan" onclick="arctan()"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="25" align="center" valign=middle><input type="button" class="buttonX22" value="(" onclick=insertarp("(")></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><input type="button" class="buttonX22" value="%" onclick=insertars("%")></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><input type="button" class="buttonX22" value=")" onclick=insertarp(")")></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#5d5e10"><input type="text" size="6" name="Bass"></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=3 align="center" valign=middle bgcolor="#089c5d"><input type="text" name="Potencia"><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><input type="button" class="buttonX7" value="Elevar" onclick="pot()"></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#5d5e10"><input type="text" size="12" name="Exponente"<br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="25" align="center" valign=middle><input type="button" class="buttonX22" value="*" onclick=insertars("*")></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><input type="button" class="buttonX4PDF" value="PDF" onclick="savePDF()"></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><input type="button" class="buttonX22" value="/" onclick=insertars("/")></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><input type="button" class="buttonX7" value="Base" onclick="newbase()"><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=3 align="center" valign=middle><input type="button" class="buttonX72" value="Sustituir" onclick="sustxpot()"><input type="button" class="buttonX72" value="Añadir" onclick="addpot()"><input type="button" class="buttonX72" value="Reset" onclick="resetpot()"></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"> <input type="button" class="buttonX7" value="Raiz" onclick="raiz()"><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><input type="button" class="buttonX7" value="Exponente" onclick="newexp()"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000" height="25" align="left"><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000" height="25" align="left"><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-right: 1px solid #000000" height="25" align="left"><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="25" align="left"><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=3 align="center" valign=middle><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="25" align="left"><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="25" align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="25" align="center" valign=middle><input type="button" class="buttonX4" value="Calcular" onclick="calcular()"></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><input type="button" class="buttonX4" value="<--" onclick="barrido()"><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><input type="button" class="buttonX4" value="(Ragequit)" onclick="clean()"></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left"><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=3 align="center" valign=middle><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><input type="button" class="buttonX4" value="DeleteTHis" onclick="DelH()"></td>
+	</tr>
+	<tr>
+		<td style="border: 1px solid #000000" colspan=11 height="35" align="center">
+		<audio controls><source src="whims_of_fate.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
+  		<audio controls><source src="pregym.mp3" type="audio/mpeg"></audio>
+  		<audio controls><source src="cypherbattle.mp3" type="audio/mpeg"></audio>
+  		<audio controls><source src="mirorB.mp3" type="audio/mpeg"></audio>
+  		<audio controls><source src="MyWay(CellCover-TFS).mp3" type="audio/mpeg"></audio>
+  		<audio controls><source src="Logic&Gimmicks.mp3" type="audio/mpeg"></audio>
+  		<br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=11 height="25" align="left" valign=middle> <h2>Salt History:</h2></td>
+		</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=9 height="224" align="center" valign=middle><br></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; " colspan=9 rowspan=9 align="center" valign=middle"><br><textarea name="Historial" style="width: 882px; height: 202px; background-image: url(Salt.jpg); background-size: 294px 202px; resize: none;"> </textarea></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=9 align="center" valign=middle><br></td>
+	</tr>
+</form>
+</table>
+<!-- ************************************************************************** -->
+</body>
+
+</html>

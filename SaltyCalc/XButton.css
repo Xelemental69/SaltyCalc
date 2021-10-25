@@ -1,0 +1,309 @@
+.buttonX1 {
+	padding: 10px 14px;
+	font: Saltfont;
+	font-size: 24px;
+	background-color: #20D18E;
+	border: 2px dotted #2F97CB;
+	color: #DAD541;
+	border-radius: 10px;
+	box-shadow: 0 8px #999;
+	opacity: 1;
+}
+.buttonX1:hover {
+	background-color: #1F9065;
+	opacity: 0.8;
+	animation-name: colorchange;
+	animation-duration: 2s;
+}
+.buttonX1:active {
+	box-shadow: 0 4px #777;
+	transform: translateY(4px);
+	background-color: #A3CC3C;
+	color: #2D68AF;
+}
+@keyframes colorchange {
+  from {background-color: #1F9065;}
+  to {background-color:  #266FBD;}
+}
+
+.buttonX21 {
+	padding: 8px 14px;
+	font-family: Saltfont;
+	font-size: 18px;
+	background-color: #20D18E;
+	border: 2px dotted #2F97CB;
+	color: #DAD541;
+	border-radius: 12px;
+	opacity: 1;
+}
+.buttonX21:hover {
+	background-color: #1F9065;
+	opacity: 0.8;
+	animation-name: colorchange;
+	animation-duration: 0.25s;
+}
+.buttonX21:active {
+	background-color: #A3CC3C;
+	color: #2D68AF;
+}
+
+.buttonX22 {
+	padding: 8px 14px;
+	font-family: Saltfont;
+	font-size: 18px;
+	background-color:  #E58738;
+	border: 2px dotted #E55738;
+	color:  #4D38E5;
+	border-radius: 12px;
+	opacity: 1;
+}
+.buttonX22:hover {
+	background-color: #B45D24;
+	opacity: 0.8;
+	animation-name: colorchange2;
+	animation-duration: 0.25s;
+}
+.buttonX22:active {
+	background-color:   #591EEC;
+	color:  #3012AE;
+}
+@keyframes colorchange2 {
+  from {background-color: #C29631;}
+  to {background-color:  #B07A31;}
+}
+
+.buttonX3 {
+	padding: 8px 14px;
+	font-family: Saltfont;
+	font-size: 18px;
+	background-color: #2F97CB;
+	border: 2px dotted #20D18E;
+	color: #DAD541;
+	border-radius: 8px;
+	opacity: 1;
+}
+.buttonX3:hover {
+	background-color: #3C821A;
+	opacity: 0.8;
+	animation-name: colorchange3;
+	animation-duration: 0.25s;
+}
+.buttonX3:active {
+	background-color: #F13333;
+	color: #B70037;
+}
+@keyframes colorchange3 {
+  from {background-color: #3C821A;}
+  to {background-color: #5B7413;}
+}
+.buttonX3F {
+	padding: 8px 13px;
+	font-family: Saltfont;
+	font-size: 16px;
+	background-color: #2F97CB;
+	border: 2px dotted #20D18E;
+	color: #DAD541;
+	border-radius: 8px;
+	opacity: 1;
+}
+.buttonX3F:hover {
+	background-color: #3C821A;
+	opacity: 0.8;
+	animation-name: colorchange3;
+	animation-duration: 0.25s;
+}
+.buttonX3F:active {
+	background-color: #F13333;
+	color: #B70037;
+}
+
+
+.buttonX4PDF {
+	padding: 10px 14px;
+	font-family: Saltfont;
+	font-size: 20px;
+	background-color: #2F97CB;
+	border: 2px dotted #20D18E;
+	color: #DAD541;
+	border-radius: 10px;
+	opacity: 1;
+}
+.buttonX4PDF:hover {
+	background-color: #3C821A;
+	opacity: 0.8;
+	animation-name: colorchange3;
+	animation-duration: 0.25s;
+}
+.buttonX4PDF:active {
+	background-color: #F13333;
+	color: #B70037;
+}
+
+.buttonX4M {
+	padding: 10px 14px;
+	font-family: Saltfont;
+	font-size: 20px;
+	background-color: #d48417;
+	border: 2px dotted #8A34F2;
+	color: #287E1D;
+	border-radius: 10px;
+	opacity: 1;
+}
+.buttonX4M:hover {
+	background-color: #B76E17;
+	opacity: 0.8;
+	animation-name: colorchangeM;
+	animation-duration: 0.25s;
+}
+.buttonX4M:active {
+	background-color: #962BB6;
+	border: 2px dotted #C2228A;
+	color: #C9CB26;
+}
+@keyframes colorchangeM {
+  from {background-color: #B76E17;}
+  to {background-color:  #7E511D;}
+}
+
+.buttonX4 {
+	padding: 10px 14px;
+	font-family: Saltfont;
+	font-size: 20px;
+	background-color: #64747F;
+	border: 2px dotted #9ED0F2;
+	color: #DAD541;
+	border-radius: 10px;
+	opacity: 1;
+}
+.buttonX4:hover {
+	background-color: #2D3439;
+	background-image: url("sno.png");
+	opacity: 0.8;
+	animation: nieve 20s linear infinite;
+}
+.buttonX4:active {
+	background-color: #B1C0CA;
+	color: #131247;
+}
+@keyframes nieve {
+0% {background-position: 0px 0px;}
+100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+.buttonX5 {
+	padding: 8px 12px;
+	font-family: Saltfont;
+	font-size: 17px;
+	background-color: #20D18E;
+	border: 2px dotted #2F97CB;
+	color: #DAD541;
+	border-radius: 10px;
+	opacity: 1;
+}
+.buttonX5:hover {
+	background-color: #1F9065;
+	opacity: 0.8;
+	animation-name: colorchange;
+	animation-duration: 0.25s;
+}
+.buttonX5:active {
+	background-color: #A3CC3C;
+	color: #2D68AF;
+}
+@keyframes colorchange {
+  from {background-color: #1F9065;}
+  to {background-color: #108A96;}
+}
+.buttonX6 {
+	padding: 10px 14px;
+	font-family: Saltfont;
+	font-size: 18px;
+	background-color: #FFF933;
+	border: 2px dotted #6523AF;
+	color: #1D7C2D;
+	border-radius: 10px;
+	opacity: 1;
+}
+.buttonX6:hover {
+	background-color: #8A860E;
+	opacity: 0.8;
+	animation-name: colorchange6;
+	animation-duration: 0.25s;
+}
+.buttonX6:active {
+	background-color: #AF233E;
+	color: #2D68AF;
+}
+.buttonX62 {
+	padding: 8px 8px;
+	font-family: Saltfont;
+	font-size: 12px;
+	background-color: #FFF933;
+	border: 2px dotted #6523AF;
+	color: #1D7C2D;
+	border-radius: 10px;
+	opacity: 1;
+}
+.buttonX62:hover {
+	background-color: #8A860E;
+	opacity: 0.8;
+	animation-name: colorchange6;
+	animation-duration: 0.25s;
+}
+.buttonX62:active {
+	background-color: #AF233E;
+	color: #2D68AF;
+}
+@keyframes colorchange6 {
+  from {background-color: #8A860E;}
+  to {background-color: #69AF23;}
+}
+.buttonX7 {
+	padding: 10px 14px;
+	font-family: Saltfont;
+	font-size: 18px;
+	background-color: #1ACBB3;
+	border: 2px dotted #CB421A;
+	color: #CB1ABD;
+	border-radius: 10px;
+	opacity: 1;
+}
+.buttonX7:hover {
+	background-color: #363C87;
+	opacity: 0.8;
+	animation-name: colorchange6;
+	animation-duration: 0.25s;
+}
+.buttonX7:active {
+	background-color: #B8860B;
+	color: #0B71B8;
+}
+.buttonX72 {
+	padding: 10px 14px;
+	font-family: Saltfont;
+	font-size: 15px;
+	background-color: #1ACBB3;
+	border: 2px dotted #CB421A;
+	color: #CB1ABD;
+	border-radius: 10px;
+	opacity: 1;
+}
+.buttonX72:hover {
+	background-color: #363C87;
+	opacity: 0.8;
+	animation-name: colorchange6;
+	animation-duration: 0.25s;
+}
+.buttonX72:active {
+	background-color: #B8860B;
+	color: #0B71B8;
+}
+@keyframes colorchange7 {
+  from {background-color: #363C87;}
+  to {background-color: #1C9652;}
+}
+
+@font-face{
+	font-family: Saltfont;
+	src: url(yukont.ttf);
+}
